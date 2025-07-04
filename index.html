@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Enhanced mobile viewport with safe area support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- Mobile status bar and theme -->
+    <meta name="theme-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Hide status bar on Android -->
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Prevent zoom and selection -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <meta name="description" content="Beautiful iOS-style weather app with real-time updates and animations" />
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Prevent text size adjustment -->
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      
+      /* Prevent selection and context menu */
+      * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Allow text selection for inputs */
+      input, textarea {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+      
+      /* Hide scrollbars globally */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      html, body {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        overflow-x: hidden;
+      }
+      
+      /* Full screen support */
+      html, body, #root {
+        height: 100%;
+        height: 100vh;
+        height: 100dvh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+      
+      /* Safe area support */
+      body {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+    </style>
+    
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/assets/index-9p03LRV1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CdpkxYf9.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
